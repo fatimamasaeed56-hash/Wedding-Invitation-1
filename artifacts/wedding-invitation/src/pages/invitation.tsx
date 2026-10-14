@@ -43,7 +43,7 @@ function Seal({ onOpen, broken }: { onOpen: () => void; broken: boolean }) {
     <button
       type="button"
       onClick={onOpen}
-      aria-label="افتحوا الرسالة: ختم ليالي وعمار"
+      aria-label="افتحوا الرسالة: ختم ليالي $عمار"
       data-testid="button-wax-seal"
       className="group relative grid place-items-center rounded-full outline-none focus-visible:ring-4 focus-visible:ring-[hsl(38_60%_70%)] focus-visible:ring-offset-4 focus-visible:ring-offset-[hsl(26_38%_44%)]"
     >
@@ -68,7 +68,7 @@ function Seal({ onOpen, broken }: { onOpen: () => void; broken: boolean }) {
             textShadow: '0 1px 0 hsl(4 60% 14%), 0 -1px 0 hsl(10 60% 55% / .5)',
           }}
         >
-          ليالي وعمار
+          ليالي $عمار
         </span>
       </motion.span>
     </button>
@@ -141,7 +141,7 @@ function PhotoModal({ open, onClose }: { open: boolean; onClose: () => void }) {
             <div className="relative overflow-hidden border border-[hsl(30_30%_70%)]">
               <img
                 src={PHOTO}
-                alt="ليالي وعمار في طفولتهما، متعانقين ومبتسمين"
+                alt="ليالي $عمار في طفولتهما، متعانقين ومبتسمين"
                 className="block w-full object-cover sepia-[.35]"
                 data-testid="img-childhood"
               />
@@ -335,7 +335,7 @@ export default function Invitation() {
           <Reveal className="text-center">
             <Rosette className="mx-auto h-16 w-16 text-[hsl(38_52%_50%)]" />
             <h1 className="font-ruqaa mt-4 text-5xl text-[hsl(14_52%_28%)] sm:text-6xl" data-testid="text-names">
-              ليالي <span className="text-[hsl(38_52%_48%)]">و</span> عمار
+              ليالي <span className="text-[hsl(38_52%_48%)]">$</span>عمار
             </h1>
             <Ornament className="mx-auto mt-4 h-5 w-56 text-[hsl(38_52%_50%)]" />
           </Reveal>
@@ -404,7 +404,7 @@ export default function Invitation() {
 
       <footer className="pb-12 text-center">
         <Ornament className="mx-auto h-4 w-40 text-[hsl(38_52%_45%)]" />
-        <p className="font-ruqaa mt-3 text-xl text-[hsl(14_52%_30%)]">ليالي وعمار</p>
+        <p className="font-ruqaa mt-3 text-xl text-[hsl(14_52%_30%)]">ليالي $عمار</p>
       </footer>
     </main>
   );
